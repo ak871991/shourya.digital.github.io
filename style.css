@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #ff6f61;
+  --secondary-color: #fbbf24;
+  --accent-color: #4ade80;
+  --text-color: #1f2937;
+  --background-color: #fef9c3;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #1f2937;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+section h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--accent-color);
+  padding-left: 1rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+footer {
+  background-color: var(--accent-color);
+  color: #1f2937;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.email-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
